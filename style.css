@@ -1,0 +1,136 @@
+
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #1E201E;
+    background-color: #ECDFCC;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+    align-items: center;
+}
+
+main section {
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    height: auto;
+    background-color: #697565;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main section:first-child h2 {
+    margin: 0;
+    margin-bottom: 10px;
+    /* background-color: red; */
+    text-align: center;
+}
+
+main section:first-child form {
+    /* background-color: blue; */
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 6px;
+}
+
+main section:first-child form div {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+main section:first-child form div input[type="text"],
+main section:first-child form div input[type="number"]  {
+    width: 45%;
+    margin-right: 10px;
+    height: 20px;
+    /* background-color: #ECDFCC; */
+}
+
+main section:first-child form div:nth-of-type(4) {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    justify-content: start;
+}
+
+
+main section:first-child form div:nth-of-type(4) input {
+    width: 17px;
+    height: 17px;
+}
+
+main section:first-child form button {
+    margin-top: 5px;
+    padding: 3px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: #697565;
+}
+
+main section:first-child form button:hover {    
+    color: black;
+    border: 1px solid black;
+}
+
+
+#incompleteBookList div[data-testid="bookItem"],
+#completeBookList div[data-testid="bookItem"]  {
+    border: 2px solid #ECDFCC;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px; 
+    border-radius: 10px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: red; */
+    align-items: center;
+} 
+
+
+#incompleteBookList, #completeBookList {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+div.rakContainer section h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    /* height: auto; */
+}
+
+div.rakContainer {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+div.rakContainer section {
+    width: 50%;
+    height: auto;
+}
+
+p[data-testid="bookItemIsComplete"] {
+    display:none
+}
